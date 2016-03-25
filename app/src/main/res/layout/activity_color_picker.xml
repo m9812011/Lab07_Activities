@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:context="com.example.melvin.lab07_activities.ColorPickerActivity">
+
+        <RadioGroup
+            android:layout_gravity="center"
+            android:layout_height="300dp"
+            android:layout_width="wrap_content"
+            android:gravity="bottom">
+
+            <RadioButton
+                android:id="@+id/holo_red_light"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:text="holo_red_light"
+                android:onClick="clickColor"
+                android:textSize="24sp"
+                android:checked="true"
+                android:textColor="@android:color/holo_red_light"/>
+
+            <RadioButton
+                android:id="@+id/holo_orange_light"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:text="holo_orange_light"
+                android:onClick="clickColor"
+                android:textSize="24sp"
+                android:textColor="@android:color/holo_orange_light"/>
+
+            <RadioButton
+                android:id="@+id/holo_green_light"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:text="holo_green_light"
+                android:onClick="clickColor"
+                android:textSize="24sp"
+                android:textColor="@android:color/holo_green_light"/>
+
+            <RadioButton
+                android:id="@+id/holo_blue_light"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:text="holo_blue_light"
+                android:onClick="clickColor"
+                android:textSize="24sp"
+                android:textColor="@android:color/holo_blue_light"/>
+
+        </RadioGroup>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/cancel"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:onClick="submit"
+            android:text="Cancel"/>
+        <Button
+            android:id="@+id/ok"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="OK"
+            android:onClick="submit"/>
+    </LinearLayout>
+
+    </LinearLayout>
+
